@@ -46,7 +46,7 @@ public class Charactergen {
 	public static String roleSelect(String selectedRole) {
 		String Role = "Barbarian";
 		//Switch Case to Determine Role
-		switch (Integer.ParseInt(selectedRole)) {
+		switch (Integer.parseInt(selectedRole)) {
 			case 1:
 				Role = "Barbarian";
 				break;
