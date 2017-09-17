@@ -24,6 +24,9 @@ public class Charactergen {
 
 		// ***** Use the Character class method to SET the character's role by calling the roleSelect method, passing an integer that returns a string)
 		
+		//This String is only used in the immediate following method call
+		String selectMessage = "Enter a number that represents your desired character class. 1-Barbarian 2-Magician 3-Celtic 4-Rogue:";
+		human.setCharRole(roleSelect(JOptionPane.showInputDialog(null, selectMessage, "Welcome to Legendary Epics!", JOptionPane.QUESTION_MESSAGE)));
 
 		// Use the Character class method to SET the character's health by calling the calculateHealth method, passing BASE_HEALTH, minHealthBonus, and maxHealthBonus as parameters
 		human.setHealth(calculateHealth(BASE_HEALTH, minHealthBonus, maxHealthBonus));	
