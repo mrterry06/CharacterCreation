@@ -36,14 +36,14 @@ public class Charactergen {
 
 		// Call the displayOutput Method by passing the values of character name, role, starting health, and starting currency through the Character class GETTER methods
 		// ***** Modify the line below to add the role.
-		displayOutput(human.getCharName(), human.getHealth(), human.getCurrency());
+		displayOutput(human.getCharName(), human.getHealth(), human.getCurrency(), human.getCharRole());
 	
 	}
 
 	// ***** Create a Method called roleSelect() here that sets the character's role, using a switch statement.
 	
 
-	public static String roleSelect(string selectedRole) {
+	public static String roleSelect(String selectedRole) {
 		//Switch Case to Determine Role
 		switch (Integer.ParseInt(selectedRole)) {
 			case 1:
@@ -83,14 +83,14 @@ public class Charactergen {
 	// This method displays the output to the user
 	// ****** Modify the method header below so that it also accepts the Character's role as an input parameter.
 
-	public static void displayOutput(String charName, int startHealth, double startCurrency)
+	public static void displayOutput(String charName, int startHealth, double startCurrency, String charRole)
 	{
 		// Create a new decimal format to truncate double output
 		DecimalFormat df = new DecimalFormat("#.##");  
 
 		// Display output to the user
 		// ***** Modify the code below so that it also display's the character's class.
-		JOptionPane.showMessageDialog(null,"Your name is " + charName + ", your starting health is " + startHealth+ ", and your starting credits are " + Double.valueOf(df.format(startCurrency))+ ".", "Your Character Stats", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null,"Your name is " + charName + " the " + charRole + ", your starting health is " + startHealth+ ", and your starting credits are " + Double.valueOf(df.format(startCurrency))+ ".", "Your Character Stats", JOptionPane.INFORMATION_MESSAGE);
 		System.exit(0);
 	}
 }
