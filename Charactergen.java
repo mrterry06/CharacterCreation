@@ -44,23 +44,26 @@ public class Charactergen {
 	
 
 	public static String roleSelect(String selectedRole) {
+		string Role = 'Barbarian';
 		//Switch Case to Determine Role
 		switch (Integer.ParseInt(selectedRole)) {
 			case 1:
-				return 'Barbarian';
+				Role = 'Barbarian';
 				break;
 			case 2:
-				return 'Magician';
+				Role = 'Magician';
 				break;
 			case 3:
-				return 'Celric'; 
+				Role = 'Celric'; 
 				break;
 			case 4:
-				return 'Rogue';
+				Role =  'Rogue';
 				break;
 			default:
-				return 'Barbarian';
+				Role = 'Barbarian';
 		}
+
+		return Role;
 	}
 
 
