@@ -40,7 +40,25 @@ public class Charactergen {
 	// ***** Create a Method called roleSelect() here that sets the character's role, using a switch statement.
 	
 
-
+	public static String roleSelect(string cRole) {
+		//Switch Case to Determine Role
+		switch (Integer.ParseInt(cRole)) {
+			case 1:
+				return 'Barbarian';
+				break;
+			case 2:
+				return 'Magician';
+				break;
+			case 3:
+				return 'Celric'; 
+				break;
+			case 4:
+				return 'Rogue';
+				break;
+			default:
+				return 'Barbarian';
+		}
+	}
 
 
 
