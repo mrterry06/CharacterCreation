@@ -9,16 +9,22 @@ public class Character
 	// Declare instance variables
 
 	private String charName;
+	private String charRole;
 	private int startHealth;
 	private double startCurrency;
 	// **** Add a string variable named charRole
 
 	// Declare object methods, getters and setters for character name, health, and currency
 
-	// ****** Add a setter named setCharRole
+	public void setCharRole(String cRole)
+	{
+		charRole = cRole;
+	}
 
-	// ****** Add a getter named getCharRole
-
+	public String getCharRole()
+	{
+		return charRole;
+	}
 
 	public void setCharName(String cName)
 	{
